@@ -1,42 +1,258 @@
-<!DOCTYPE html>
-<html lang="en">
+<html><head>
+    <title>form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+        html,
+        body {
+            min-height: 100%;
+        }
 
-<head>
-	<title>Form</title>
+        body,
+        div,
+        form,
+        input,
+        select,
+        p {
+            padding: 0;
+            margin: 0;
+            outline: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 13px;
+            color: #eee;
+        }
+
+        body {
+            background: currentColor("yellow") no-repeat center;
+            background-size: cover;
+        }
+
+        h1,
+        h2 {
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        h2 {
+            margin: 0 0 0 8px;
+        }
+
+        .main-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 25px;
+            background: rgba(33, 95, 243, 1);
+        }
+
+        .left-part,
+        form {
+            padding: 25px;
+        }
+
+        .left-part {
+            text-align: center;
+        }
+
+        .fa-graduation-cap {
+            font-size: 72px;
+        }
+
+        form {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,
+        select {
+            padding: 5px;
+            margin-bottom: 30px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #eee;
+        }
+
+        input::placeholder {
+            color: #eee;
+        }
+
+        option:focus {
+            border: none;
+        }
+
+        option {
+            background: black;
+            border: none;
+        }
+
+        .checkbox input {
+            margin: 0 10px 0 10px;
+            vertical-align: middle;
+        }
+
+        .checkbox a {
+            color: #26a9e0;
+        }
+
+        .checkbox a:hover {
+            color: #85d6de;
+        }
+
+        .btn-item,
+        button {
+            padding: 10px 5px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: none;
+            background: #0b1c49;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        .btn-item {
+            display: inline-block;
+            margin: 20px 5px 0;
+        }
+
+        button {
+            width: 100%;
+        }
+
+        button:hover,
+        .btn-item:hover {
+            background: #85d6de;
+        }
+
+        @media (min-width: 568px) {
+
+            html,
+            body {
+                height: 100%;
+            }
+
+            .main-block {
+                flex-direction: row;
+                height: calc(100% - 50px);
+            }
+
+            .left-part,
+            form {
+                flex: 1;
+                height: auto;
+            }
+        }
+
+        
+  #bg {
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn.pixabay.com/photo/2021/02/01/11/30/jazz-5970230_960_720.jpg') no-repeat center center fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    -webkit-animation: myfirst 5s ; /* Chrome, Safari, Opera */
+    animation: myfirst 5s ;
+  }
+
+  /* Chrome, Safari, Opera */
+  @-webkit-keyframes myfirst {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+  }
+
+  /* Standard syntax */
+  @keyframes myfirst {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+  }
+    </style>
 </head>
-<body bgcolor="Brown">
-	<h1 align="center">Registration Form</h1>
 
-          <input class="fname" type="text" name="name" placeholder="Full name" required=""> <br>
-          <input type="text" name="name" placeholder="Email" required=""> <br>
-          <input type="date" id="DOB" name="Date of Birth"><br>
-          <p>Please select your gender</p><br>
-           <input type="radio" id="gender1" name="age" value="Female" required="">  Female<br>
-            
-           <input type="radio" id="age2" name="age" value="Male" required="">  Male<br>
-             
-           <input type="radio" id="age3" name="age" value="Rather" required="">  Rather not to say
-             <br><br>
-          <input type="text" name="name" placeholder="Phone number" required=""><br>
-          <input type="password" name="name" placeholder="Password" required=""><br>
-          Re-Enter your Password<br>
-          <input type="password" name="name" placeholder="Password" required=""><br>
+<body>
+    <div id="bg"></div>
 
-          <input type="checkbox" name="checkbox">you like my webpage<br><br>
-          
+    <div class="main-block">
+        <form action="https://www.youtube.com/watch?v=Qbx54UpAXY8&amp;list=RDMM&amp;index=28">
+            <div class="title">
+                <i class="fas fa-pencil-alt"></i> <!--f36-->
+                <h2 style="text-align: end;font-weight: bold;font-size: 24;">Fill form for general updates</h2>
+            </div>
+            <div class="info">
+                <input class="fname" type="text" name="name" placeholder="Full name" required="">
+                <input type="password" name="name" placeholder="Password" required="">
 
-          <select>
-            <option value="course-type" selected>Choose Instrument*</option>
-            <option value="short-courses">Drum</option>
-            <option value="featured-courses">Guitar</option>
-            <option value="undergraduate">Flute</option>
-            <option value="diploma">Banjo</option>
-            <option value="certificate">Keyboard</option>
-            <option value="masters-degree">Piano</option>
-            <option value="postgraduate">Dhol</option>
-          </select> <br>
+                <div>
+                    <div>
+                        <p>Please select your gender</p><br>
+                        <input type="radio" id="age1" name="age" value="Male" required=""> Male<br>
 
-          <button type="submit" href="#">Submit</button>
+                        <input type="radio" id="age2" name="age" value="Female" required=""> Female<br>
 
-</body>
-</html>
+                        <input type="radio" id="age3" name="age" value="Rather" required=""> Rather not to say
+                        <br><br>
+                    </div>
+                    <input type="date" id="DOB" name="Date of Birth">
+                </div>
+                <input type="text" name="name" placeholder="Phone number" required="">
+                <input type="text" name="name" placeholder="Email" required="">
+
+
+                <select>
+                    <option value="choose" selected="">Choose Genre*</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Techno">Techno</option>
+                    <option value="House">House</option>
+                    <option value="LoFi">LoFi</option>
+                    <option value="Trap">Trap</option>
+                </select>
+            </div>
+            <div class="checkbox">
+
+                <input type="checkbox" name="checkbox"><span>I agree to the <a href="#">Privacy Policy</a></span>
+                <input type="checkbox" name="checkbox"><span>I allow to keep me updates on <a href="#">Subcription</a></span>
+                
+            </div>
+            <button type="submit" href="#" style="
+            mix-blend-mode: color-dodge;">Submit</button>
+        </form>
+        <div class="left-part">
+            <i class="#"></i>
+            <h1 style="
+    color: antiquewhite;
+    font-weight: bold;
+">Register to our Website</h1>
+            <p style="font-style: italic;">This is a basic form to gather information about you and
+                your passion for musical genres and providing to access our sister website for buying musical
+                instruments.</p>
+            <div class="btn-group">
+                <a class="btn-item" href="https://www.musicstores.in/">Access our website</a>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+    <h3 align="center" style="color: rgb(35, 34, 139)">This single webpage is designed by</h3>
+    <h4 align="center" style="color: rgb(35, 34, 139)">MAYANK BHATRA</h4>
+    <h5 align="center" style="color: rgb(35, 34, 139)">2047158</h5>
+
+</body></html>
