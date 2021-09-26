@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="news.xsl"?>
+<!DOCTYPE newscollect SYSTEM "news.dtd">
+<newscollect>
+<news NewsId = "01">
+    <newstopic>Most underrated move in 2021 offseason</newstopic>
+    <newsdesc>A look at the biggest under-the-radar move for all 30 teams</newsdesc>
+    <newspara>The big moves get our attention, but sometimes it's the little ones that make the difference. The 2021 NBA offseason was filled with splashy signings and trades that saw some of the league's top talent find new surroundings. Be careful, however, not to discount the transactions made around the fringes.</newspara>
+</news>
+</newscollect>

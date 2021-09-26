@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/xsl" href = "store.xsl"?>
+<?xml-stylesheet type = "text/xsl" href = "event.xsl"?>
+
+
+<painting_list>
+
+<abs>
+<name>The Stary night</name>
+<price>$25.95</price>
+<description>This Dutch post-impressionist painter is the man behind the magnificent oil painting, The Starry Night, Sunflower and Irises.</description>
+<year>Vincent Van Gogh (1853–1890)</year>
+</abs>
+
+<abs>
+<name>Monalisa</name>
+<price>$17.95</price>
+<description>Regarded as one of the greatest artists of all time, he is well known for his two remarkable paintings: The Mona Lisa and The Last Supper.</description>
+<year>Leonardo da Vinci (1452–1519)</year>
+</abs>
+
+<abs>
+<name>The Night Watch</name>
+<price>$18.95</price>
+<description>Known as the “Dutch Master”, he is considered one of the greatest visual artists in the history of art. His famous masterpieces include The Night Watch and The Return of the Prodigal Son.</description>
+<year>Rembrandt (1606–1669)</year>
+</abs>
+
+<abs>
+<name>The Sculpture</name>
+<price>$14.50</price>
+<description>This triple threat is a painter, a sculptor and an architect, renowned for his epic ceiling mural on the Sistine Chapel, the David and Pietà and St. Peter’s Basilica in Rome.</description>
+<year>Michelangelo (1475–1564)</year>
+</abs>
+
+<abs>
+<name>The Weeping Woman</name>
+<price>$16.95</price>
+<description>A child prodigy, he finished his first painting, The Picador at just 9 years old! His most popular paintings were Guernica, Les Demoiselles d'Avignon and The Weeping Woman.</description>
+<year>Pablo Picasso (1881-1973)</year>
+</abs>
+
+    <event tag = "393"> 
+      <date>20-10-2021</date> 
+      <organisor>Van helsing</organisor> 
+      <venue>Artixo - Delhi</venue> 
+      <time>2 O'clock</time> 
+   </event> 
+   <event tag = "493"> 
+      <date>25-10-2021</date> 
+      <organisor>Vignesh Gupta</organisor> 
+      <venue>Experensio - Mumbai</venue> 
+      <time>3 O'clock</time> 
+   </event> 
+   <event tag = "593"> 
+      <date>02-11-2021</date> 
+      <organisor>Akriti Singh</organisor> 
+      <venue>Kalakender - Jaipur</venue> 
+      <time>4 O'clock</time>
+   </event>
+
+</painting_list>

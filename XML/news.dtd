@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT newscollect (news+)>
+<!ELEMENT news (newstopic,newsdesc,newspara)>
+<!ELEMENT newstopic (#PCDATA)>
+<!ELEMENT newsdesc (#PCDATA)>
+<!ELEMENT newspara (#PCDATA)>
+<!ATTLIST news NewsId CDATA #REQUIRED>

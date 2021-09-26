@@ -1,0 +1,12 @@
+<!ELEMENT Homepage (painting_list+)>
+<!ELEMENT painting_list (abs,event)>
+<!ELEMENT abs (name, price, description, year)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT event (tag, date, organisor, venue, time)>
+<!ELEMENT tag (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT organisor (#PCDATA)>
+<!ELEMENT venue (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
