@@ -1,0 +1,420 @@
+<html>
+
+<head>
+    <title>form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <style>
+        html,
+        body {
+            min-height: 100%;
+        }
+
+        body,
+        div,
+        form,
+        input,
+        select,
+        p {
+            padding: 0;
+            margin: 0;
+            outline: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 13px;
+            color: #eee;
+        }
+
+        body {
+            background: currentColor("yellow") no-repeat center;
+            background-size: cover;
+        }
+
+        h1,
+        h2 {
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        h2 {
+            margin: 0 0 0 8px;
+        }
+
+        .main-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 25px;
+            background: rgba(33, 95, 243, 1);
+        }
+
+        .left-part,
+        form {
+            padding: 25px;
+        }
+
+        .left-part {
+            text-align: center;
+        }
+
+        .fa-graduation-cap {
+            font-size: 72px;
+        }
+
+        form {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,
+        select {
+            padding: 5px;
+            margin-bottom: 30px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #eee;
+        }
+
+        input::placeholder {
+            color: #eee;
+        }
+
+        option:focus {
+            border: none;
+        }
+
+        option {
+            background: black;
+            border: none;
+        }
+
+        .checkbox input {
+            margin: 0 10px 0 10px;
+            vertical-align: middle;
+        }
+
+        .checkbox a {
+            color: #26a9e0;
+        }
+
+        .checkbox a:hover {
+            color: #85d6de;
+        }
+
+        .btn-item,
+        button {
+            padding: 10px 5px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: none;
+            background: #0b1c49;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        .btn-item {
+            display: inline-block;
+            margin: 20px 5px 0;
+        }
+
+        button {
+            width: 100%;
+        }
+
+        button:hover,
+        .btn-item:hover {
+            background: #85d6de;
+        }
+
+        @media (min-width: 568px) {
+
+            html,
+            body {
+                height: 100%;
+            }
+
+            .main-block {
+                flex-direction: row;
+                height: calc(100% - 50px);
+            }
+
+            .left-part,
+            form {
+                flex: 1;
+                height: auto;
+            }
+        }
+
+        .box {
+
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "box1  box3 box2";
+            grid-gap: 1rem;
+        }
+
+        .box2 {
+            display: inline-block;
+            grid-area: box2;
+        }
+
+        .box1 {
+            display: inline-block;
+            grid-area: box1;
+
+        }
+
+
+        #bg {
+            width: 100%;
+            height: 100%;
+            background: url('https://cdn.pixabay.com/photo/2021/02/01/11/30/jazz-5970230_960_720.jpg') no-repeat center center fixed;
+
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+            -webkit-animation: myfirst 5s;
+            /* Chrome, Safari, Opera */
+            animation: myfirst 5s;
+        }
+
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes myfirst {
+            from {
+                opacity: 0.2;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Standard syntax */
+        @keyframes myfirst {
+            from {
+                opacity: 0.2;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+
+
+    </style>
+    
+</head>
+
+<body>
+    <div id="bg"></div>
+    <div class="left-part" style="background-color: antiquewhite;">
+        <i class="#"></i>
+        <h1 style="color: #dc0c53cf;font-weight: bold;font-family: monospace;">Register to our Website</h1>
+        <p style="font-style: normal; color: #0b1c49;font-variant: small-caps">This is a basic form to gather
+            information about you and
+            your passion for musical genres and providing to access our sister website for buying musical
+            instruments.</p>
+        <div class="btn-group">
+            <a class="btn-item" href="https://www.musicstores.in/">Access our website</a>
+        </div>
+    </div>
+
+    <hr style="color: #e4446c;border-top-style: dashed;border-width: 2px;">
+
+    <div style="text-align: -webkit-center;">
+        <iframe src="https://player.vimeo.com/video/585391478?h=d60e15d88b&title=0&byline=0&portrait=0" width="640"
+            height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <h5 style="color: #0b1c49;"><a href="https://vimeo.com/585391478">Conditioner - Terms of Surrender</a> from <a
+                href="https://vimeo.com/unlimitedtimeonly">Unlimited Time Only</a> on <a
+                href="https://vimeo.com">Vimeo</a>.</h5>
+    </div>
+    <hr style="color: #e4446c;border-top-style: dashed;border-width: 2px;">
+
+    <div>
+        <h3 style="text-align-last: center; color: #000;"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae itaque
+            omnis error illum saepe voluptatibus, fugit blanditiis odio aspernatur laudantium deserunt tempora minima
+            est ea consectetur vel. Et, recusandae aut.
+        </h3>
+        <p style="text-align-last: center; color: #000;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+            porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem quaerat eius quasi ut porro
+            pariatur adipisci ratione sapiente quisquam.</p>
+    </div>
+    <br>
+
+    <section class="box" style="background-color: antiquewhite;">
+        <div id="box1">
+            <h1 style="color: rgb(35, 34, 139);font-size: 22px;"> Below our band performane</h1>>
+            <video width="350" height="200" controls>
+                <source src="media.mp4" type="video/mp4">
+                <source src="media.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="box3">
+            <p style="color: rgb(35, 34, 139);font-size: 22px;"> Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Adipisci maxime dicta quasi beatae officiis? Porro quaerat quo beatae, natus fugiat harum alias
+                architecto eaque? Blanditiis eveniet quo recusandae perspiciatis repudiandae aperiam ad ducimus id
+                quidem officiis, laboriosam minima delectus iste, iure unde aliquid possimus aspernatur placeat animi
+                ipsa laudantium necessitatibus perferendis illo a? Nulla voluptas nostrum, dignissimos minus </p>>
+            </video>
+        </div>
+        <div id="box2">
+            <h1 style="color: rgb(35, 34, 139);">Audio recording of our band</h1>
+            <p style="color: rgb(35, 34, 139);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam,
+                reprehenderit.</p>
+            <br>
+            <br>
+            <audio controls>
+                <source src="aud.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+
+    <div class="main-block">
+        <div id="error"></div>
+        <form id="form" action="https://www.youtube.com/watch?v=Qbx54UpAXY8&amp;list=RDMM&amp;index=28" method="GET">
+            <div class="title">
+                <i class="fas fa-pencil-alt"></i>
+                <!--f36-->
+                <h2 style="text-align: end;font-weight: bold;font-size: 24;">Fill form for general updates</h2>
+            </div>
+            <div class="info">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" onkeypress="return /[a-z]/i.test(event.key)" required><br>
+                <label for="age">Age</label>
+                <input id="age" name="age" type="number" required><br>
+
+                <label for="name">University Name</label>
+                <input id="name" name="name" type="text" onkeypress="return /[a-z]/i.test(event.key)" required><br>
+                <div>
+                    <div>
+                        <p>Please select your Branch</p><br>
+                        <input type="radio" id="age1" name="age" value="Male" required=""> CS<br>
+
+                        <input type="radio" id="age2" name="age" value="Female" required=""> MCA<br>
+
+                        <input type="radio" id="age3" name="age" value="Rather" required=""> MDS
+                        <br><br>
+                    </div>
+                    <label for="uname">Username</label>
+                    <input id="uname" name="uname" type="text" required><br>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="textbox1"/>
+                    <input type="button" id="Validate" onclick="ValidatePassword()" value="Validate" /><br>
+
+                    <script type="text/javascript">
+                    function ValidatePassword() {
+                        var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{10,12}$/;
+                        var txt = document.getElementById("textbox1");
+                        if (!regex.test(txt.value)) {
+                            alert("Password strength is not good.");
+                        } else {
+                            alert("Password strength is good.");
+                        }
+                    }
+                </script>
+
+                </div>
+                <label for="phone">Phone Number</label>
+                <input id="phone" name="phone" type="number" required><br>
+                <label for="phone">Email ID</label>
+                <input type="text" name="name"  required="">
+                <label for="phone">Address</label>
+                <input type="text" name="name"  required="">
+
+                <select>
+                    <option value="choose" selected="">Choose State*</option>
+                    <option value="Rock">Delhi</option>
+                    <option value="Pop">Jaipur</option>
+                    <option value="Jazz">Mumbai</option>
+                    <option value="Techno">Bangalore</option>
+                    <option value="House">Chennai</option>
+                </select>
+            </div>
+            <div class="checkbox">
+
+                <input type="checkbox" name="checkbox"><span>I agree to the <a href="#">Privacy Policy</a></span>
+                <input type="checkbox" name="checkbox"><span>I allow to keep me updates on <a href="#">Subcription</a></span>
+
+            </div>
+            <button type="submit" href="#" style="mix-blend-mode: color-dodge;">Submit</button>
+        </form>
+        <div class="left-part">
+            <i class="#"></i>
+            <h1 style="
+    color: antiquewhite;
+    font-weight: bold;
+">Register to our Website</h1>
+            <p style="font-style: italic;">This is a basic form to gather information about you and
+                your passion for musical genres and providing to access our sister website for buying musical
+                instruments.</p>
+            <div class="btn-group">
+                <a class="btn-item" href="https://www.musicstores.in/">Access our website</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="background-color: antiquewhite;padding: 2px;">
+        <button onclick="getLocation() " style="margin-left: 272px;width: 60%;">Tap the button Geolocation </button>
+        <br>
+        <p id="demo" style="
+    color: #0b1c49;
+    text-align-last: center;padding: 10px;"></p>
+
+        <script>
+            var x = document.getElementById("demo");
+
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+
+            function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude +
+                    "<br>Longitude: " + position.coords.longitude;
+            }
+        </script>
+    </div>
+
+    <div id="googleMap" style="width:100%;height:400px;">
+        <iframe id ="map"src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d57287.008248801074!2d91.73968540419918!3d26.182426022630843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1629880964845!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <br>
+
+    <h3 align="center" style="color: rgb(35, 34, 139)">This single webpage is designed by</h3>
+    <h4 align="center" style="color: rgb(35, 34, 139)">MAYANK BHATRA</h4>
+    <h5 align="center" style="color: rgb(35, 34, 139)">2047158</h5>
+
+</body>
+
+</html>
+
+   
+

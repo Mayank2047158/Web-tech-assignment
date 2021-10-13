@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+<p>Display college : details by DOM parser:</p>
+
+<p id="demo"></p>
+
+    
+<script>
+const person1 = {
+    name :"Mayank Bhatra",
+    branch :"Computer Science",
+    college :"Christ University",
+    email :"mayank@cs.chriniversity.in"
+};
+
+const person2 = {
+    name :"Karunya Challa"
+    branch :"Data Science"
+    college :"Christ University"
+    email :"karunya@mds.chriniversity.in"
+};
+
+const person3 = {
+    name :"Tiyasha Das",
+    branch :"Computer Science",
+    college :"Christ University",
+    email :"tiyasha@cs.chriniversity.in"
+};
+
+const person4 = {
+    name :"Joswin Desouza",
+    branch :"Computer Application",
+    college :"Christ University",
+    email :"joswin@mca.chriniversity.in"
+};
+
+const person5 = {
+    name: "Riya Gurbani",
+    branch: "Computer Application",
+    college: "Christ University",
+    email: "riya@5mca.chriniversity.in"
+};
+
+document.getElementById("demo").innerHTML = person1.name + ", " + person1.college;
+document.getElementById("demo").innerHTML = person2.name + ", " + person2.college;
+document.getElementById("demo").innerHTML = person3.name + ", " + person3.college;
+document.getElementById("demo").innerHTML = person4.name + ", " + person4.college;
+document.getElementById("demo").innerHTML = person5.name + ", " + person5.college;
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="college.xsl"?>
+<!DOCTYPE CHRIST SYSTEM "college.dtd">
+<CHRIST>
+<CS>
+    <STU-NAME>Mayank Bhatra</STU-NAME>
+    <STU-BRANCH>Computer Science</STU-BRANCH>
+    <STU-COLLEGE>Christ University</STU-COLLEGE>
+    <STU-EMAIL>mayank@cs.christuniversity.in</STU-EMAIL>
+    <AddButton>Add details now</AddButton>
+</CS>
+
+<CS>
+    <STU-NAME>Karunya Challa</STU-NAME>
+    <STU-BRANCH>Data Science</STU-BRANCH>
+    <STU-COLLEGE>Christ University</STU-COLLEGE>
+    <STU-EMAIL>karunya@mds.christuniversity.in</STU-EMAIL>
+    <AddButton>Add details now</AddButton>
+</CS>
+
+<CS>
+    <STU-NAME>Tiyasha DAS</STU-NAME>
+    <STU-BRANCH>Computer Science</STU-BRANCH>
+    <STU-COLLEGE>Christ University</STU-COLLEGE>
+    <STU-EMAIL>tiyasha@cs.christuniversity.in</STU-EMAIL>
+    <AddButton>Add details now</AddButton>
+</CS>
+
+<CS>
+    <STU-NAME>Joswin Desouza</STU-NAME>
+    <STU-BRANCH>Computer Application</STU-BRANCH>
+    <STU-COLLEGE>Christ University</STU-COLLEGE>
+    <STU-EMAIL>joswin@mca.christuniversity.in</STU-EMAIL>
+    <AddButton>Add details now</AddButton>
+</CS>
+
+<CS>
+    <STU-NAME>Riya Gurbani</STU-NAME>
+    <STU-BRANCH>Computer Application</STU-BRANCH>
+    <STU-COLLEGE>Christ University</STU-COLLEGE>
+    <STU-EMAIL>riya@5mca.christuniversity.in</STU-EMAIL>
+    <AddButton>Add details now</AddButton>
+</CS>
+
+</CHRIST>
