@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl" ?> 
+<!DOCTYPE Notes [
+<!ELEMENT Events (to,from,heading,body1)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT body1 (#PCDATA)>
+]>
+<Events>
+<note>
+  <to>Aastha</to> 
+  <from>Mayank</from>
+  <heading>Reminder</heading>
+  <body1>Assignments to be submitted by this weekend</body1>
+</note>
+
+<note>
+<to>Avi</to> 
+<from>Mayank</from>
+<heading>Reminder</heading>
+<body1>Assignments to be submitted by 20th August </body1>
+</note>
+
+<note>
+<to>Riya</to> 
+<from>Mayank</from>
+<heading>Meeting</heading>
+<body1>4PM at Conference Room, Central Block </body1>
+</note>
+
+</Events>
